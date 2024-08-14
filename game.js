@@ -4,11 +4,14 @@ const ctx = canvas.getContext('2d');
 canvas.width = 320;
 canvas.height = 480;
 
+const birdImage = new Image();
+birdImage.src = 'bird.png';  // Image of the bird
+
 const bird = {
     x: 50,
     y: canvas.height / 2,
-    width: 30,
-    height: 30,
+    width: 34,
+    height: 24,
     gravity: 0.6,
     lift: -12,
     velocity: 0,
@@ -17,12 +20,11 @@ const bird = {
 const pipes = [];
 const pipeWidth = 60;
 const pipeGap = 100;
-const pipeInterval = 1500; // ms
+const pipeInterval = 1500; // milliseconds
 let lastPipeTime = 0;
 
 function drawBird() {
-    ctx.fillStyle = 'yellow';
-    ctx.fillRect(bird.x, bird.y, bird.width, bird.height);
+    ctx.drawImage(birdImage, bird.x, bird.y, bird.width, bird.height);
 }
 
 function drawPipes() {
