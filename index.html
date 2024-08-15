@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://i.imgur.com/AUGD9uL.jpeg');
+            background-image: url('https://i.imgur.com/ah0HhEc.jpeg');
             background-size: cover;
             background-position: center;
             color: #fff;
@@ -20,26 +20,39 @@
             background-color: rgba(211, 47, 47, 0.8); /* Semi-transparent red */
             color: white;
             padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: rgba(211, 47, 47, 0.6);
+            border-radius: 5px;
         }
 
         main {
-            padding: 2rem;
+            padding: 6rem 2rem 2rem; /* Added padding-top to avoid header overlap */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 80vh;
             position: relative;
-        }
-
-        .spider-logo {
-            background-image: url('https://i.imgur.com/XWpxR42.jpeg');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 300px;
-            height: 300px;
-            margin: 2rem 0;
         }
 
         .content {
@@ -64,9 +77,15 @@
 <body>
     <header>
         <h1>Spider-Man Variants</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="variants.html">Variants</a>
+            <a href="news.html">News</a>
+            <a href="social.html">Social</a>
+        </nav>
     </header>
     <main>
-        <div class="spider-logo"></div>
         <div class="content">
             <h2>Welcome to Spider-Man Variants</h2>
             <p>Explore the diverse world of Spider-Man variants from various universes and dimensions. Discover the different faces of Spider-Man and their unique stories.</p>
