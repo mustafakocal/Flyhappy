@@ -3,52 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spider-Man Variants</title>
+    <title>Home - Spider-Man Variants</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://i.imgur.com/XWpxR42.jpeg');
+            background-image: url('https://i.imgur.com/AUGD9uL.jpeg');
             background-size: cover;
             background-position: center;
-            color: #333;
+            color: #fff;
+            text-align: center;
         }
 
         header {
-            background-color: rgba(211, 47, 47, 0.8);
+            background-color: rgba(211, 47, 47, 0.8); /* Semi-transparent red */
             color: white;
             padding: 1rem;
-            text-align: center;
-        }
-
-        nav {
-            background-color: rgba(51, 51, 51, 0.8);
-            overflow: hidden;
-        }
-
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
         }
 
         main {
-            padding: 1rem;
-            text-align: center;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            position: relative;
+        }
+
+        .spider-logo {
+            background-image: url('https://i.imgur.com/XWpxR42.jpeg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 300px;
+            height: 300px;
+            margin: 2rem 0;
+        }
+
+        .content {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black for readability */
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         footer {
-            background-color: rgba(51, 51, 51, 0.8);
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark grey */
             color: white;
             text-align: center;
             padding: 1rem;
@@ -62,21 +65,13 @@
     <header>
         <h1>Spider-Man Variants</h1>
     </header>
-
-    <!-- Navigation Bar Start -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="variants.html">Variants</a>
-        <a href="news.html">News</a>
-        <a href="social.html">Social</a>
-    </nav>
-    <!-- Navigation Bar End -->
-
     <main>
-        <!-- This page intentionally left blank or add content -->
+        <div class="spider-logo"></div>
+        <div class="content">
+            <h2>Welcome to Spider-Man Variants</h2>
+            <p>Explore the diverse world of Spider-Man variants from various universes and dimensions. Discover the different faces of Spider-Man and their unique stories.</p>
+        </div>
     </main>
-
     <footer>
         <p>&copy; 2024 Spider-Man Variants</p>
     </footer>
