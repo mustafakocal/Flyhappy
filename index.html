@@ -9,15 +9,17 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://i.imgur.com/1gi0GUV.png');
+            background-image: url('/mnt/data/A_minimalistic_wallpaper_featuring_a_large_black_s.png');
             background-size: cover;
+            background-repeat: no-repeat;
             background-position: center;
+            background-attachment: fixed;
             color: #fff;
             text-align: center;
         }
 
         header {
-            background-color: rgba(211, 47, 47, 0.8); /* Yarı saydam kırmızı */
+            background-color: rgba(211, 47, 47, 0.8); /* Semi-transparent red */
             color: white;
             padding: 1rem;
             position: fixed;
@@ -28,28 +30,25 @@
         }
 
         nav {
-            background-color: #333;
-            overflow: hidden;
+            display: flex;
+            justify-content: center;
             margin-top: 2rem;
         }
 
         nav a {
-            float: left;
-            display: block;
             color: white;
-            text-align: center;
-            padding: 14px 16px;
             text-decoration: none;
+            padding: 0.5rem 1rem;
             font-weight: bold;
         }
 
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: rgba(211, 47, 47, 0.6);
+            border-radius: 5px;
         }
 
         main {
-            padding: 6rem 2rem 2rem; /* Üst kısmı ayarlandı, header ile çakışmayı önlemek için */
+            padding: 6rem 2rem 2rem; /* Added padding-top to avoid header overlap */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -59,7 +58,7 @@
         }
 
         .content {
-            background-color: rgba(0, 0, 0, 0.7); /* Okunabilirlik için yarı saydam siyah */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black for readability */
             padding: 1.5rem;
             border-radius: 8px;
             max-width: 600px;
@@ -67,16 +66,16 @@
         }
 
         .content h2 {
-            font-size: 2rem; /* Daha küçük başlık boyutu */
+            font-size: 2rem; /* Smaller heading size */
             margin: 0 0 1rem;
         }
 
         .content p {
-            font-size: 1rem; /* Daha küçük paragraf boyutu */
+            font-size: 1rem; /* Smaller paragraph size */
         }
 
         footer {
-            background-color: rgba(51, 51, 51, 0.8); /* Yarı saydam koyu gri */
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent dark grey */
             color: white;
             text-align: center;
             padding: 1rem;
